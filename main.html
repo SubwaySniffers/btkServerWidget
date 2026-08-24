@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <title>Fetch JSON Example</title>
 </head>
-<body>
+<body id = "bodyy">
 
     <h1>User List</h1>
     <!-- This container will hold our JSON data -->
@@ -17,7 +17,7 @@
 const url = 'https://discord.com/api/guilds/1448709429678575728/widget.json';
 const p = document.createElement("p");
 p.textContent = "r";
-
+document.getElementById("bodyy").appendChild(p);
 // Fetch the data from the website
 fetch(url)
   .then(response => {
