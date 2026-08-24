@@ -15,6 +15,7 @@ fetch(url)
     const listContainer = document.getElementById('user-list');
     const p = document.getElementById('dataa');
     p.textContent = `${data}`;
+    p.textContent = "hi";
 
     // Loop through the array of JSON objects
     const members = data.members;
