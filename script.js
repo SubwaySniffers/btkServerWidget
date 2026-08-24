@@ -1,6 +1,8 @@
 // The URL of the website or API returning JSON data
 const url = 'https://discord.com/api/guilds/1448709429678575728/widget.json';
-
+const p = document.createElement("p");
+p.textContent = "r";
+document.getElementById("bodyy").appendChild(p);
 // Fetch the data from the website
 fetch(url)
   .then(response => {
@@ -34,3 +36,4 @@ fetch(url)
     // Handle any errors that happen during fetch
     console.error('There was a problem fetching the data:', error);
   });
+
