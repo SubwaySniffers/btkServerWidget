@@ -13,6 +13,8 @@ fetch(url)
   .then(data => {
     // Select the HTML element where data will go
     const listContainer = document.getElementById('user-list');
+    const p = document.getElementById('dataa');
+    p.textContent = `${data}`;
 
     // Loop through the array of JSON objects
     const members = data.members;
